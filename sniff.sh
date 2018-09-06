@@ -23,7 +23,6 @@ if [ ! -d $LOGDIRNAME ]; then
 fi
 
 for e in $(get_container_hash); do
-	container_name="$(get_container_name $e)"
 	name=$e
 	container_name=$(get_container_name $e)
 	if [ ! -z "$container_name" ]; then
